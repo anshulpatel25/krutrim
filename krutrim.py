@@ -78,13 +78,14 @@ def main():
             st.markdown(prompt)
 
         with st.chat_message(name=assistant_role.name, avatar=assistant_role.avatar):
-            response = bot.invoke(
-                {"messages": st.session_state.messages}, config=config
-            )
-            st.markdown(response["messages"][-1].content)
-            st.markdown(
-                f"Total Tokens Used: **{response["messages"][-1].usage_metadata["total_tokens"]}**"
-            )
+            with st.spinner("Thinking...", show_time=True):
+                response = bot.invoke(
+                    {"messages": st.session_state.messages}, config=config
+                )
+                st.markdown(response["messages"][-1].content)
+                st.markdown(
+                    f"Total Tokens Used: **{response["messages"][-1].usage_metadata["total_tokens"]}**"
+                )
 
         st.session_state.messages.append(response["messages"][-1])
 
