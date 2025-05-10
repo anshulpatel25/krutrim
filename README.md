@@ -36,11 +36,7 @@ Follow these steps to set up and run the project:
 
    Ollama is required to run the Gemma3 model. Follow the instructions below to install it:
 
-   - **For macOS**:
-     Download and install Ollama from [https://ollama.com/download](https://ollama.com/download).
-
-   - **For Windows/Linux**:
-     Ollama is currently only available for macOS. If you're on another platform, consider using a macOS virtual machine or Docker.
+   Download and install Ollama from [https://ollama.com/download](https://ollama.com/download).
 
 4. Download the `gemma3` model:
 
