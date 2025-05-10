@@ -1,6 +1,6 @@
 # कृत्रिम
 
-कृत्रिम (Krutrim) is a simple AI chatbot built using Streamlit, LangGraph, LangChain, and the Google Gemma3 model. It is designed to provide helpful and accurate responses to user queries.
+कृत्रिम (Krutrim) is a simple AI chatbot built using Streamlit, LangGraph, LangChain, and the Google Gemma3 model. It is designed to provide helpful responses to user queries.
 
 ## Features
 
