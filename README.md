@@ -62,7 +62,7 @@ Follow these steps to set up and run the project:
 ## Usage
 
 - Enter your query in the chatbot input field.
-- The chatbot will respond with helpful and accurate answers.
+- The chatbot will respond with helpful answers.
 - If the chatbot doesn't know the answer, it will respond with "I don't know."
 
 ## License
