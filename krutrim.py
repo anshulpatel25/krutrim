@@ -3,7 +3,7 @@ from langgraph.graph.message import add_messages
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.state import CompiledStateGraph
 from langchain.chat_models import init_chat_model
-from langchain_core.messages import HumanMessage, SystemMessage, AnyMessage
+from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage
 from langgraph.checkpoint.memory import MemorySaver
 from dataclasses import dataclass
 import uuid
@@ -22,7 +22,7 @@ class Role:
     name: str
 
 
-def chatbot(state: State) -> dict[str, list[AnyMessage]]:
+def chatbot(state: State) -> dict[str, BaseMessage]:
     llm = init_chat_model(model="gemma3", model_provider="ollama")
 
     state["messages"].append(
