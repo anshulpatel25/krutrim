@@ -6,7 +6,7 @@
 
 - Interactive chatbot interface powered by Streamlit.
 - Uses LangGraph for state management and LangChain for language model integration.
-- Supports the Google Gemma3 model via Ollama.
+- Powered by the Google Gemma3 model via Ollama.
 
 ## Installation
 
@@ -79,4 +79,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [LangGraph](https://github.com/langgraph/langgraph)
 - [LangChain](https://langchain.com/)
 - [Ollama](https://ollama.com/)
-```
+- [Gemma3](https://ollama.com/library/gemma3)
