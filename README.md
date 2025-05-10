@@ -1,1 +1,82 @@
-# krutrim
+# कृत्रिम
+
+कृत्रिम (Krutrim) is a simple AI chatbot built using Streamlit, LangGraph, LangChain, and the Google Gemma3 model. It is designed to provide helpful and accurate responses to user queries.
+
+## Features
+
+- Interactive chatbot interface powered by Streamlit.
+- Uses LangGraph for state management and LangChain for language model integration.
+- Supports the Google Gemma3 model via Ollama.
+
+## Installation
+
+Follow these steps to set up and run the project:
+
+### Prerequisites
+
+- Python 3.13 or higher
+- [Pipenv](https://pipenv.pypa.io/en/latest/) for dependency management
+
+### Steps
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/your-username/krutrim.git
+   cd krutrim
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   pipenv install
+   ```
+
+3. Install Ollama:
+
+   Ollama is required to run the Gemma3 model. Follow the instructions below to install it:
+
+   - **For macOS**:
+     Download and install Ollama from [https://ollama.com/download](https://ollama.com/download).
+
+   - **For Windows/Linux**:
+     Ollama is currently only available for macOS. If you're on another platform, consider using a macOS virtual machine or Docker.
+
+4. Download the `gemma3` model:
+
+   Once Ollama is installed, run the following command to download the `gemma3` model:
+
+   ```sh
+   ollama pull gemma3
+   ```
+
+5. Run the application:
+
+   Activate the Pipenv shell and start the Streamlit app:
+
+   ```sh
+   pipenv shell
+   streamlit run krutrim.py
+   ```
+
+6. Open your browser:
+
+   The application will be available at `http://localhost:8501`.
+
+## Usage
+
+- Enter your query in the chatbot input field.
+- The chatbot will respond with helpful and accurate answers.
+- If the chatbot doesn't know the answer, it will respond with "I don't know."
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Streamlit](https://streamlit.io/)
+- [LangGraph](https://github.com/langgraph/langgraph)
+- [LangChain](https://langchain.com/)
+- [Ollama](https://ollama.com/)
+```
