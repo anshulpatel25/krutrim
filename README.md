@@ -1,12 +1,12 @@
 # कृत्रिम
 
-कृत्रिम (Krutrim) is a simple AI chatbot built using Streamlit, LangGraph, LangChain, and the Google Gemma3 model. It is designed to provide helpful responses to user queries.
+कृत्रिम (Krutrim) is a simple AI chatbot built using Streamlit, LangGraph, LangChain, and the Llama3.1 model. It is designed to provide helpful responses to user queries.
 
 ## Features
 
 - Interactive chatbot interface powered by Streamlit.
 - Uses LangGraph for state management and LangChain for language model integration.
-- Powered by the Google Gemma3 model via Ollama.
+- Powered by the Llama3.1 model via Ollama.
 
 ## Installation
 
@@ -29,21 +29,21 @@ Follow these steps to set up and run the project:
 2. Install dependencies:
 
    ```sh
-   pipenv install
+   uv pip install -r pyproject.toml
    ```
 
 3. Install Ollama:
 
-   Ollama is required to run the Gemma3 model. Follow the instructions below to install it:
+   Ollama is required to run the Llama3.1 model. Follow the instructions below to install it:
 
    Download and install Ollama from [https://ollama.com/download](https://ollama.com/download).
 
-4. Download the `gemma3` model:
+4. Download the `llama3.1` model:
 
-   Once Ollama is installed, run the following command to download the `gemma3` model:
+   Once Ollama is installed, run the following command to download the `llama3.1` model:
 
    ```sh
-   ollama pull gemma3
+   ollama pull llama3.1
    ```
 
 5. Run the application:
@@ -51,8 +51,7 @@ Follow these steps to set up and run the project:
    Activate the Pipenv shell and start the Streamlit app:
 
    ```sh
-   pipenv shell
-   streamlit run krutrim.py
+   uv run streamlit run krutrim.py
    ```
 
 6. Open your browser:
@@ -75,4 +74,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [LangGraph](https://github.com/langgraph/langgraph)
 - [LangChain](https://langchain.com/)
 - [Ollama](https://ollama.com/)
-- [Gemma3](https://ollama.com/library/gemma3)
+- [Llama3.1](https://ollama.com/library/llama3.1)
