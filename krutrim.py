@@ -24,12 +24,12 @@ class Role:
     name: str
 
 
-rpi_mcp_url = os.getenv("KRUTRIM_RPI_MCP_URL")
+ambience_device_mcp_url = os.getenv("KRUTRIM_AMBIENCE_DEVICE_MCP_URL")
 
 client = MultiServerMCPClient(
     {
         "ambience": {
-            "url": rpi_mcp_url,
+            "url": ambience_device_mcp_url,
             "transport": "streamable_http",
         }
     }
@@ -61,7 +61,7 @@ def determine_role(message, human_role, assistant_role) -> Role:
         return assistant_role
 
 
-async def create_graph():
+async def create_graph() -> CompiledStateGraph:
 
     tools = await client.get_tools()
 

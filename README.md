@@ -1,12 +1,16 @@
 # कृत्रिम
 
-कृत्रिम (Krutrim) is a simple AI chatbot built using Streamlit, LangGraph, LangChain, and the Llama3.1 model. It is designed to provide helpful responses to user queries.
+कृत्रिम - Simple AI Chatbot/Agent with MCP built using Streamlit, LangGraph, LangChain, and the Llama3.1 model. It is designed to provide helpful responses to user queries.
 
 ## Features
 
 - Interactive chatbot interface powered by Streamlit.
 - Uses LangGraph for state management and LangChain for language model integration.
 - Powered by the Llama3.1 model via Ollama.
+
+## Setting up MCP Server
+
+- Please follow instructions at [ambience-device-mcp](https://github.com/anshulpatel25/ambience-device-mcp)
 
 ## Installation
 
@@ -46,7 +50,13 @@ Follow these steps to set up and run the project:
    ollama pull llama3.1
    ```
 
-5. Run the application:
+5. Set the MCP server URL as environment variable
+
+   ```sh
+   export KRUTRIM_AMBIENCE_DEVICE_MCP_URL=http://localhost:3333/mcp
+   ```
+
+6. Run the application:
 
    Activate the Pipenv shell and start the Streamlit app:
 
@@ -54,7 +64,7 @@ Follow these steps to set up and run the project:
    uv run streamlit run krutrim.py
    ```
 
-6. Open your browser:
+7. Open your browser:
 
    The application will be available at `http://localhost:8501`.
 
